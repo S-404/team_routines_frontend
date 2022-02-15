@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useEffect} from 'react';
+import {BrowserRouter as Router,} from "react-router-dom";
+import AppRouter from "./router/appRouter";
+import {useDispatch} from "react-redux";
+import './styles/App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  const dispatch = useDispatch()
 
+
+  useEffect(() => {
+    if (localStorage.getItem('auth') && localStorage.getItem('userid')) {
+        dispatch({type: 'SET_AUTH', value: true})
+    }
+  }, [])
+  return (
+      <Router>
+        <AppRouter/>
+      </Router>
+  )
+}
 export default App;
