@@ -1,4 +1,4 @@
-import Fetching from "./Fetching";
+import Fetching from "../Fetching";
 
 interface createUserAccess {
     USERGROUP_ID: number;
@@ -13,7 +13,6 @@ interface getUsersAccess {
 interface getOneUserAccess {
     USERGROUP_ID: number;
     USERID: string;
-
 }
 
 interface updateUserAccess {

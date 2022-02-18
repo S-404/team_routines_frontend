@@ -1,4 +1,4 @@
-import Fetching from "./Fetching";
+import Fetching from "../Fetching";
 
 interface createUserGroup {
     name: string;

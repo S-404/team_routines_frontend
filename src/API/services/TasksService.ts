@@ -1,4 +1,4 @@
-import Fetching from "./Fetching";
+import Fetching from "../Fetching";
 
 interface createTask {
     USERGROUP_ID: number;
@@ -56,10 +56,10 @@ export default class TasksService {
         )
     }
 
-    static async getTasks(param: getTasks) {
+    static async getTasks({USERGROUP_ID}: getTasks) {
         return await Fetching.queryData(
-            param,
-            'api/tasks/list',
+            {},
+            `api/tasks/list/${USERGROUP_ID}`,
             'GET'
         )
     }
