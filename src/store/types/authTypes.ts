@@ -11,4 +11,4 @@ interface SetAuthAction {
     value: boolean;
 }
 
-export type  AuthAction = SetAuthAction // |
+export type  AuthAction = SetAuthAction

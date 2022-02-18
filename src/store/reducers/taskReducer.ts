@@ -1,18 +1,18 @@
-import {TaskAction, TaskActionTypes, TaskState} from "../types/taskTypes";
+import {TasksAction, TasksActionTypes, TasksState} from "../types/taskTypes";
 
-const authState: TaskState = {
+const tasksState: TasksState = {
     tasks: [],
     loading: false,
     error: null,
 }
 
-export const taskReducer = (state = authState, action: TaskAction): TaskState => {
+export const tasksReducer = (state = tasksState, action: TasksAction): TasksState => {
     switch (action.type) {
-        case TaskActionTypes.FETCH_TASKS:
+        case TasksActionTypes.FETCH_TASKS:
             return {loading: true, error: null, tasks: []}
-        case TaskActionTypes.FETCH_TASKS_SUCCESS:
+        case TasksActionTypes.FETCH_TASKS_SUCCESS:
             return {loading: false, error: null, tasks: action.res}
-        case TaskActionTypes.FETCH_TASKS_ERROR:
+        case TasksActionTypes.FETCH_TASKS_ERROR:
             return {loading: false, error: action.res, tasks: []}
         default:
             return state
