@@ -1,0 +1,13 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20em;
+  height: 100vh;
+  margin-top: -10vh;
+}
+.login-form .login-form__input {
+  margin: 0.2em 0;
+}
+
+/*# sourceMappingURL=login.css.map */
