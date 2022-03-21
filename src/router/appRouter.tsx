@@ -3,10 +3,10 @@ import {Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "./routes";
 import Login from "../pages/Login";
 import Tasks from "../pages/Tasks";
-import {useSelector} from "react-redux";
+import {useTypedSelector} from "../hooks/useTypedSelector";
 
 const AppRouter = () => {
-    const isAuth = useSelector(state => state.auth.isAuth)
+    const isAuth = useTypedSelector(state => state.auth.isAuth)
     return (
         isAuth?
             <Routes>
