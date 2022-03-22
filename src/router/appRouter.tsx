@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import {privateRoutes, publicRoutes} from "./routes";
-import Login from "../pages/Login";
+import Login from "../pages/LoginPage/Login";
 import Tasks from "../pages/Tasks";
 import {useTypedSelector} from "../hooks/useTypedSelector";
 

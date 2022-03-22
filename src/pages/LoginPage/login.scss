@@ -1,0 +1,24 @@
+.login-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20em;
+  height: 100vh;
+  margin-top: -10vh;
+
+  .login-form__header{
+
+  }
+  .login-form__user-input{
+
+  }
+  .login-form__password-input{
+
+  }
+  .login-form__input{
+    margin:  .2em 0;
+  }
+  .login-form__login-button{
+
+  }
+}

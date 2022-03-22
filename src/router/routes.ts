@@ -1,6 +1,6 @@
 import About from "../pages/About";
 import Tasks from "../pages/Tasks";
-import Login from "../pages/Login";
+import Login from "../pages/LoginPage/Login";
 
 
 export const privateRoutes = [
