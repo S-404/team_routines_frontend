@@ -1,6 +1,7 @@
 import React, {useEffect} from 'react';
 import {useTypedSelector} from "../../../hooks/useTypedSelector";
 import {useActions} from "../../../hooks/useActions";
+import LogoutButton from "../../LogoutButton";
 
 
 const TaskList =  () => {
@@ -12,7 +13,6 @@ const TaskList =  () => {
     }, [])
 
     if (loading) {
-        console.log('loading')
         return <h1>Loading</h1>
     }
 
@@ -22,6 +22,7 @@ const TaskList =  () => {
 
     return (
         <div>
+<LogoutButton/>
             {tasks.map(task=>(
                 <div key={`task_${task.ID}`}>
                     {task.TASK_NAME}

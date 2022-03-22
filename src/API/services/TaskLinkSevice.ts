@@ -25,7 +25,7 @@ interface deleteTaskLink {
 }
 
 
-export default class UsersAccessService {
+export default class TaskLinkService {
 
     static async createTaskLink(param: createTaskLink) {
         return await Fetching.queryData(
