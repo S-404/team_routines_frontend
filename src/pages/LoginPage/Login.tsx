@@ -1,7 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
 import {useTypedSelector} from "../../hooks/useTypedSelector";
 import MyInput from "../../components/UI/input/myInput/MyInput";
-import MySmallButton from "../../components/UI/button/mySmallButton";
+import MyButton from "../../components/UI/button/MyButton";
 import "./login.scss"
 const Login: FC = () => {
     const {userid} = useTypedSelector(state => state.user)
@@ -50,7 +50,7 @@ const Login: FC = () => {
                 />
             </div>
             <div className='login-form__login-button'>
-                <MySmallButton
+                <MyButton
                     onClick={tryLogin}
                     text='LOGIN'/>
             </div>
