@@ -9,5 +9,13 @@
 .login-form .login-form__input {
   margin: 0.2em 0;
 }
+.login-form .login-form__login-button {
+  height: 2em;
+  margin: 1em 0;
+}
+.login-form .login-form__info {
+  color: red;
+  height: 3em;
+}
 
 /*# sourceMappingURL=login.css.map */
